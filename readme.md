@@ -1,7 +1,3 @@
----
-title: WILC1000 QNX Driver
----
-
 # WILC1000 QNX Driver
 
 This is the WILC1000 QNX Driver source code
@@ -22,27 +18,27 @@ There is a set of function pointer in QNX SDIO structure **sdio_ext_t**, you can
 The function pointer of the structure **sdio_ext_t** is shown below, with comments to introduce the usage
 
 ```
-    void				(*hdl_init)(void *);	// something has to be initialized in the SDIO event handler
+    	void			(*hdl_init)(void *);	// something has to be initialized in the SDIO event handler
 
-	int					(*detect)(void *);		// card status
-	int					(*powerup)(void *);		// powerup MMC/SD HC
-	int					(*powerdown)(void *);	// powerdown MMC/SD HC
+	int			(*detect)(void *);		// card status
+	int			(*powerup)(void *);		// powerup MMC/SD HC
+	int			(*powerdown)(void *);	// powerdown MMC/SD HC
 
-	int					(*command)(void *, sdio_cmd_t *);		// send command
-	int					(*command_done)(void *, sdio_cmd_t *);	// command done
-	int					(*ienable)(void *, int irq, int);			// enable/disable interrupt
-	int					(*ivalidate)(void *, int irq, int busy);		// validate interrupt
-	int					(*iprocess)(void *, sdio_cmd_t *cmd);	// process interrupt
-	int					(*setup_dma)(void *, paddr_t, int, int);	// DMA read/write setup
-	int					(*dma_done)(void *, int dir);			// DMA xfer complete
-	int					(*setup_pio)(void *, char *buf, int len, int dir);	// PIO read/write setup
-	int					(*pio_done)(void *, char *buf, int len, int dir);	// complete
-	int					(*block_size)(void *, int blksz);		// set block size
-	int					(*bus_speed)(void *, int *speed);		// set bus speed, in HZ
-	int					(*bus_width)(void *, uint8_t width);	// set bus_width, 1 or 4
+	int			(*command)(void *, sdio_cmd_t *);		// send command
+	int			(*command_done)(void *, sdio_cmd_t *);	// command done
+	int			(*ienable)(void *, int irq, int);			// enable/disable interrupt
+	int			(*ivalidate)(void *, int irq, int busy);		// validate interrupt
+	int			(*iprocess)(void *, sdio_cmd_t *cmd);	// process interrupt
+	int			(*setup_dma)(void *, paddr_t, int, int);	// DMA read/write setup
+	int			(*dma_done)(void *, int dir);			// DMA xfer complete
+	int			(*setup_pio)(void *, char *buf, int len, int dir);	// PIO read/write setup
+	int			(*pio_done)(void *, char *buf, int len, int dir);	// complete
+	int			(*block_size)(void *, int blksz);		// set block size
+	int			(*bus_speed)(void *, int *speed);		// set bus speed, in HZ
+	int			(*bus_width)(void *, uint8_t width);	// set bus_width, 1 or 4
 
-	int					(*shutdown)(void *);		// Shutdown
-	int					(*get_mask)(void *);		// Get current SDIO interrupt mask status
+	int			(*shutdown)(void *);		// Shutdown
+	int			(*get_mask)(void *);		// Get current SDIO interrupt mask status
 ```
 
 ## GPIO Configuration
