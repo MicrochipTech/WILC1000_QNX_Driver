@@ -1,3 +1,5 @@
+This page has a demo/example for wilc1000. Please click [here](https://github.com/search?q=topic:wilc1000+org:MicrochipTech) for more demos/examples
+
 # WILC1000 QNX Driver
 
 This is the WILC1000 QNX Driver source code
