@@ -19,8 +19,8 @@
 			}
 		],
 		"dfp": {
-            		"name": "-",
-            		"semverRange": "-"
+            		"name": "SAMD21_DFP",
+            		"semverRange": "^3.4.116"
         	},
 		"device": {
 			"metaDataVersion": "1.0.0",
