@@ -1,7 +1,3 @@
----
-title: WILC1000 QNX Driver
----
-
 # WILC1000 QNX Driver
 
 This is the WILC1000 QNX Driver source code
