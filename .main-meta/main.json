@@ -1,0 +1,53 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.3.0",
+		"name": "com.microchip.module.driver.project.WILC1000_QNX_Driver",
+		"version": "2.0.0",
+		"displayName": "WILC1000 QNX Driver",
+		"projectName": "WILC1000_QNX_Driver",
+		"shortDescription": "This is the WILC1000 QNX Driver source code",
+		"ide": {
+			"name": "QNX Momentics",
+			"semverRange": ">=7.0.3"
+		},
+		"compiler": [
+			{
+				"name": "qcc",
+				"semverRange": ">=7.0.3"
+			}
+		],
+		"dfp": {
+            		"name": "-",
+            		"semverRange": "-"
+        	},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "wilc1000",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"keywords": [
+			"WILC1000",
+			"wireless",
+			"WIFI"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./README.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
